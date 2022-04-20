@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono del fichero-->
+    <link rel="shortcut icon" href="../assets/img/favicon-32x32(1).png">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <!--Hoja de Estilos CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Carrito-IFM</title>
+</head>
+
+<body>
+    <header>
+        <h3 class="display-6 text-center">IFM-Venta de sensores electrónicos</h3>
+    </header>
+    <div class="container my-3">
+        <nav class="navbar navbar-expand-lg navbar-light style=background-color:white;">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/favicon-32x32(1).png" alt="logo" width="80px" height="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"style="font-size: 20px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/Productos.html">Productos</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/Industria.html">Industria 4.0</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/Tecnologia.html">Tecnología IO Link</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/Carrito.html">Carrito</a>
+                </li> 
+                </ul>
+            </div>
+            </div>
+        </nav>
+        </div>
+
+<!--Slider-->
+<div class="container my-10">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../assets/img/ifm_portada3.jpg" class="d-block w-100" alt="atelier01">
+        </div>
+        <div class="carousel-item">
+            <img src="../assets/img/ifm_portada4.jpg" class="d-block w-100" alt="atelier02">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+    <!--Fin Slider-->
+
+<!--Formulario con Boostrap-->
+<div class="container">
+    <div class="items row">
+    <div class="item col col-lg-6 col-md-12 col-sm-12">
+    <form id="backForm" action="procesar.php" method="post">
+        <fieldset>
+            <legend>Formulario de Contacto</legend>
+        <div class="form-group">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" placeholder="Nombre y Apellido" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="Email" required class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="telefono">Telefono: </label>
+            <input type="tel" name="telefono" placeholder="+549 11 112233" class="form-control">
+        </div>
+    </div>
+    </div>
+        <!--Menu Desplegable-->
+
+        <h1>  </h1>
+        <legend>Pedido</legend>
+    <div class="items row">
+            <div class="item col col-lg-4 col-md-4 col-sm-4">
+            <select class="form-control" name="tiposensor" id="">
+                <option value="1880">AE1880</option>
+                <option value="1881">AE1881</option>
+                <option value="1882">AE1882</option>
+                <option value="1883">AE1883</option>
+                <option value="1884">AE1884</option>
+                <option value="1885">AE1885</option>
+            </select>
+         </div>
+    <div class="item col col-lg-2 col-md-2 col-sm-2">
+            <div class="form-group">
+                <input type="number" name="cantidad" placeholder="cantidad" class="form-control">
+            </div>
+    </div>
+    <div class="item col col-lg-2 col-md-2 col-sm-2">
+            <div>
+                <input class="btn btn-outline-primary " type="submit" value="+ Agregar">
+                </div>
+
+    </div>
+    </div>
+    <h1>  </h1>
+        <h5>Algun comentario para tener en cuenta</h5>
+
+        <textarea class="form-control" name="comentario" id="" cols="8" rows="5"></textarea>
+
+        <!--Botones-->
+
+        <div>
+        <input class="btn btn-outline-primary my-2" type="submit" value="Enviar">
+        </div>
+        <div>
+        <input class="btn btn-outline-danger my-2" type="reset" value="Borrar Formulario">
+        </div>
+    </div>
+    </div>
+    </fieldset>
+    </form>
+</div>
+    
+    <footer id="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+<script src="../libs/bootstrap/js/bootstrap.min.js"></script> 
+</body>
+</html>
